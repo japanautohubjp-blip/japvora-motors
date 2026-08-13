@@ -1,1 +1,702 @@
-https://japanautohubjp-blip.github.io/japvora-motors/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JAPVORA MOTORS | Japanese Used Cars Export</title>
+
+  <meta name="description" content="JAPVORA MOTORS - Japanese used cars for export. Quality vehicles from Japan with reliable service and international support. Contact us for available cars and export inquiries.">
+
+  <meta name="keywords" content="JAPVORA MOTORS, Japanese used cars, Japan car export, used cars Japan, Japanese cars export, cars from Japan, Japan automobile exporter">
+
+  <meta name="author" content="JAPVORA MOTORS">
+
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="JAPVORA MOTORS | Japanese Used Cars Export">
+  <meta property="og:description" content="Quality Japanese used vehicles available for international export.">
+  <meta property="og:type" content="website">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .topbar {
+      background: #0b1220;
+      color: white;
+      padding: 10px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 14px;
+    }
+
+    .topbar a {
+      color: white;
+      margin-left: 15px;
+    }
+
+    header {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 27px;
+      font-weight: 800;
+      color: #101828;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: #d71920;
+    }
+
+    nav a {
+      color: #172033;
+      font-weight: 600;
+      margin-left: 24px;
+    }
+
+    nav a:hover {
+      color: #d71920;
+    }
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(5,12,25,0.72), rgba(5,12,25,0.72)),
+        url("car1.jpg") center/cover no-repeat;
+      color: white;
+      padding: 80px 6%;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .hero h1 span {
+      color: #e52b32;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #e9edf5;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      border-radius: 7px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background: #d71920;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #b9141a;
+      transform: translateY(-2px);
+    }
+
+    .btn-light {
+      background: white;
+      color: #111827;
+    }
+
+    .btn-light:hover {
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 75px 6%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #667085;
+    }
+
+    .about {
+      background: white;
+    }
+
+    .about-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    }
+
+    .about-text h3 {
+      font-size: 30px;
+      margin-bottom: 18px;
+    }
+
+    .about-text p {
+      color: #667085;
+      margin-bottom: 15px;
+    }
+
+    .features {
+      margin-top: 25px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .feature {
+      padding: 17px;
+      background: #f5f7fa;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    .cars {
+      background: #f5f7fa;
+    }
+
+    .car-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .car-card {
+      background: white;
+      border-radius: 13px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      transition: 0.25s;
+    }
+
+    .car-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.14);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .car-info {
+      padding: 18px;
+    }
+
+    .car-info h3 {
+      font-size: 19px;
+      margin-bottom: 6px;
+    }
+
+    .car-info p {
+      color: #667085;
+      font-size: 14px;
+    }
+
+    .partner {
+      background: white;
+      text-align: center;
+    }
+
+    .partner-box {
+      max-width: 850px;
+      margin: auto;
+      padding: 45px;
+      border: 1px solid #e4e7ec;
+      border-radius: 15px;
+      background: #fafafa;
+    }
+
+    .partner-box h3 {
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .partner-name {
+      color: #d71920;
+      font-size: 25px;
+      font-weight: 800;
+      margin: 15px 0;
+    }
+
+    .contact {
+      background: #0b1220;
+      color: white;
+    }
+
+    .contact .section-title p {
+      color: #b8c0cf;
+    }
+
+    .contact-grid {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .contact-card {
+      background: #151e2f;
+      padding: 30px 20px;
+      text-align: center;
+      border-radius: 13px;
+    }
+
+    .contact-card .icon {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .contact-card a {
+      color: #fff;
+      word-break: break-word;
+    }
+
+    .line-box {
+      text-align: center;
+      margin-top: 45px;
+    }
+
+    .line-box img {
+      width: 190px;
+      height: 190px;
+      object-fit: contain;
+      background: white;
+      padding: 10px;
+      border-radius: 12px;
+    }
+
+    footer {
+      background: #070c16;
+      color: #9da7b8;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25D366;
+      color: white;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 27px;
+      font-weight: bold;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+      z-index: 2000;
+    }
+
+    @media (max-width: 900px) {
+      .car-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .topbar {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero {
+        min-height: 580px;
+      }
+
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .car-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 55px 5%;
+      }
+
+      .section-title h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP CONTACT BAR -->
+  <div class="topbar">
+    <div>🇯🇵 Japanese Used Cars & Export</div>
+    <div>
+      <a href="tel:+817085067314">📞 070-8506-7314</a>
+      <a href="mailto:japanautohub.jp@gmail.com">✉️ Email</a>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header>
+    <div class="nav">
+      <div class="logo">
+        JAPVORA <span>MOTORS</span>
+      </div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#cars">Cars</a>
+        <a href="#partner">Partner</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>JAPVORA <span>MOTORS</span></h1>
+
+      <p>
+        Quality Japanese Used Cars for International Buyers.
+        Reliable vehicles, professional service and export support from Japan.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-primary" href="#cars">View Our Cars</a>
+
+        <a class="btn btn-light"
+           href="https://wa.me/923060126062"
+           target="_blank">
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-title">
+      <h2>About JAPVORA MOTORS</h2>
+      <p>Your connection to quality vehicles from Japan.</p>
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-image">
+        <img src="car2.jpg" alt="Japanese used car from JAPVORA MOTORS">
+      </div>
+
+      <div class="about-text">
+        <h3>Japanese Quality. Global Reach.</h3>
+
+        <p>
+          JAPVORA MOTORS connects international customers with quality
+          Japanese used vehicles.
+        </p>
+
+        <p>
+          We focus on reliable vehicles, transparent communication and
+          professional support for customers looking to purchase vehicles
+          from Japan.
+        </p>
+
+        <div class="features">
+          <div class="feature">✓ Japanese Used Cars</div>
+          <div class="feature">✓ Export Support</div>
+          <div class="feature">✓ International Customers</div>
+          <div class="feature">✓ Professional Service</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CARS -->
+  <section class="cars" id="cars">
+
+    <div class="section-title">
+      <h2>Featured Vehicles</h2>
+      <p>Browse some of our available Japanese vehicles.</p>
+    </div>
+
+    <div class="car-grid">
+
+      <div class="car-card">
+        <img src="car1.jpg" alt="Japanese used car - JAPVORA MOTORS">
+        <div class="car-info">
+          <h3>Japanese Used Vehicle</h3>
+          <p>Quality vehicle from Japan</p>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="car2.jpg" alt="Japanese used vehicle">
+        <div class="car-info">
+          <h3>Japanese Used Vehicle</h3>
+          <p>Available for export</p>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="car3.jpg" alt="Japanese automobile">
+        <div class="car-info">
+          <h3>Japanese Automobile</h3>
+          <p>Contact us for details</p>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="car4.jpg" alt="Used car from Japan">
+        <div class="car-info">
+          <h3>Used Car from Japan</h3>
+          <p>Export inquiries welcome</p>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="car5.jpg" alt="Japanese used vehicle">
+        <div class="car-info">
+          <h3>Japanese Used Vehicle</h3>
+          <p>Quality & reliability</p>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="car6.jpg" alt="Japan car export vehicle">
+        <div class="car-info">
+          <h3>Japan Export Vehicle</h3>
+          <p>Contact for availability</p>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="car7.jpg" alt="Japanese car export">
+        <div class="car-info">
+          <h3>Japanese Car</h3>
+          <p>International export support</p>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <img src="car8.jpg" alt="JAPVORA MOTORS vehicle">
+        <div class="car-info">
+          <h3>JAPVORA MOTORS</h3>
+          <p>Japanese vehicle export</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PARTNER -->
+  <section class="partner" id="partner">
+
+    <div class="section-title">
+      <h2>Our Collaboration Partner</h2>
+      <p>Working together to provide professional automotive services.</p>
+    </div>
+
+    <div class="partner-box">
+      <h3>In Collaboration With</h3>
+
+      <div class="partner-name">
+        Rehman Brothers Co Ltd
+      </div>
+
+      <p>
+        JAPVORA MOTORS collaborates with Rehman Brothers Co Ltd
+        to support customers and international automotive business.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="section-title">
+      <h2>Contact JAPVORA MOTORS</h2>
+      <p>Contact us for vehicle availability, prices and export inquiries.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+        <div class="icon">📞</div>
+        <h3>Phone</h3>
+        <a href="tel:+817085067314">
+          070-8506-7314
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <div class="icon">✉️</div>
+        <h3>Email</h3>
+        <a href="mailto:japanautohub.jp@gmail.com">
+          japanautohub.jp@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-card">
+        <div class="icon">💬</div>
+        <h3>WhatsApp</h3>
+        <a href="https://wa.me/923060126062" target="_blank">
+          +92 306 0126062
+        </a>
+      </div>
+
+    </div>
+
+    <!-- LINE QR CODE -->
+    <div class="line-box">
+      <h3>Contact Us on LINE</h3>
+      <p>Scan the QR code to connect with JAPVORA MOTORS.</p>
+
+      <br>
+
+      <img src="line-qr.png"
+           alt="JAPVORA MOTORS LINE QR Code">
+    </div>
+
+  </section>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a class="whatsapp"
+     href="https://wa.me/923060126062"
+     target="_blank"
+     aria-label="Contact JAPVORA MOTORS on WhatsApp">
+    W
+  </a>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      © <span id="year"></span>
+      <strong>JAPVORA MOTORS</strong>.
+      All Rights Reserved.
+    </p>
+
+    <p>
+      Japanese Used Cars & International Vehicle Export
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
